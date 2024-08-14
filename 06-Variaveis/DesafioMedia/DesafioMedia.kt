@@ -1,5 +1,6 @@
 fun main(){
     
+    //Declarando variáveis 
     val nota1 = 9.25
     val nota2 = 8.00
     val nota3 = 4.75
