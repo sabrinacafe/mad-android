@@ -1,4 +1,6 @@
 // Exercicio verificação de idade 
+//Olhar a resolução do professor, pois precisa de tratamento de exceção
+
 fun main(){
 
     println("Digite a sua idade: ")
