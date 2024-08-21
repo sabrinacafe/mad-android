@@ -2,7 +2,7 @@
 fun main(){
 
     println("Digite a sua idade: ")
-    val idade = readLine()!!.toInt()
+    val idade = readLine()
 
     if (idade >=18) {
         println("Você é maior de idade")
