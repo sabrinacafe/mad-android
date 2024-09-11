@@ -1,20 +1,15 @@
-// Desafio: Calcular a soma dos números pares em uma lista de números
+// Desafio: Calcular a soma dos números pares em uma lista de números.
 //Criar uma lista de números e calcular a soma dos números pares.
-fun main(){
+fun main() {
+    val numeros = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    val numerosPares = mutableListOf<Int>()
 
-    val numeros = arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-    var soma = 0
-
-    if (numeros % 2 == 0){
-        val soma = Array(numeros.size) { 0 }
+    for (numero in numeros) {
+        if (numero % 2 == 0) { //número é par com a condição if (numero % 2 == 0).
+            numerosPares.add(numero)
+        }
     }
 
-     // Realizando a soma dos elementos correspondentes
-    for (i in pares.indices) {
-        soma[i] += numeros[i] 
-    }
-
-    println("A soma de todos numeros pares da lista é: $soma")
-
-
+    val somaPares = numerosPares.sum()
+    println("A soma dos números pares é: $somaPares")
 }
