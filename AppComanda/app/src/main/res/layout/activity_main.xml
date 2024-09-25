@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantidade de Coxinhas:"
+        android:id="@+id/textViewCoxinha"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCoxinha"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/editTextCoxinha"
+        android:layout_marginTop="10dp"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantidade de Bebidas:"
+        android:id="@+id/textViewBebida"
+        android:layout_below="@id/editTextCoxinha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewBebida"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/editTextBebida"
+        android:layout_marginTop="10dp"
+        android:inputType="number"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextBebida"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/calculateButton"
+        android:layout_marginTop="30dp"
+        android:text="Calcular Total"/>
+
+</RelativeLayout>
